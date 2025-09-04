@@ -19,7 +19,7 @@ As a lifelong Disney fan, I was especially interested in how buying **Pixar (200
 ---
 
 ## Data Source
-- Dataset: [Disney Movies Dataset – Kaggle](https://www.kaggle.com/datasets)  
+- Dataset: [Disney Movies Dataset – Kaggle](https://www.kaggle.com/datasets/suvroo/disney-movies-dataset)  
 - File: `disney_boxoffice_history.csv`
 
 ---
@@ -28,8 +28,9 @@ As a lifelong Disney fan, I was especially interested in how buying **Pixar (200
 - `ramos_miracle_final_project.qmd` → Quarto source file  
 - `ramos_miracle_final_project.html` → Final report (rendered)  
 - `data/` → Dataset files  
-- `figures/` → Generated visualizations  
-- `custom.css` → Styling for the report  
+- `figures/` → Generated visualizations
+- `logos/` → Logos used in visualizations
+- `custom.css` → Styling for the report
 
 ---
 
