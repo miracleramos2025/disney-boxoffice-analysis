@@ -1,0 +1,126 @@
+---
+title: "Disney Box Office Analysis"
+subtitle: "Exploring Revenue Trends, Acquisitions, and Genre Performance"
+author: "Miracle Ramos"
+date: today
+format: 
+  revealjs:
+    slide-number: true
+    theme: simple
+    fontsize: 95%
+    transition: fade
+    toc: false
+    self-contained: true
+css: custom.css
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## **Introduction** {data-state="intro"}
+
+### **Overview**
+This dataset, `disney_boxoffice_history.csv`, tracks **Disney’s box office performance**, focusing on **revenue trends, acquisitions, and genre profitability**.
+<br>
+<br>
+
+### **Why This Data?**
+I chose this dataset because it shows Disney's full box office history, making it great for exploring how its big acquisitions impacted success. I also love Disney, so this topic is really interesting to me. I’m especially interested in seeing how buying **Pixar (2006), Marvel (2009), and Lucasfilm (2012)** changed Disney’s box office performance over time.
+<br>
+<br>
+
+### **Data Source**
+**Dataset:** [Kaggle - Disney Movies Dataset](https://www.kaggle.com/datasets/suvroo/disney-movies-dataset) 
+<br>
+<br>
+
+### **Key Questions**
+1.) Did Disney’s acquisitions **increase box office success**? 
+
+2.) Are some genres naturally **more profitable** than others?
+
+
+---
+
+## **Disney’s Major Acquisitions: Impact on Box Office Revenue**
+
+This chart shows **Disney’s inflation-adjusted box office revenue** over time.  
+
+![ ](figures/acquisitions_plot.png)
+
+#### **How did Disney's revenue change after acquisitions?**
+```{r}
+
+# load package
+library(knitr)
+
+# load earnings table
+load("data/earnings_table.RData")
+
+# display
+kable(earnings_table)
+```
+
+---
+
+## Total Box Office Revenue by Genre
+
+This visualization displays **Disney’s total box office revenue by genre**, using **nominal revenue (Total Gross)** to highlight the most financially successful categories. 
+
+
+![ ](figures/revenue_by_genre_plot.png)
+---
+
+## **Top-Grossing Movies by Genre (Nominal Revenue)**
+
+The table below highlights the highest-grossing movies per genre.
+
+```{r}
+
+# load packages
+library(DT)
+
+# load highest grossing movie by genre table
+load("data/top_movies_by_genre.RData")
+
+# display
+datatable(top_movies, options = list(
+  pageLength = 10,  
+  dom = 'tp',  
+  columnDefs = list(list(className = 'dt-center', targets = "_all"))  
+), rownames = FALSE, colnames = c("Genre", "Top Movie", "Revenue ($ USD)"))
+```
+
+
+---
+
+## Scatter Plot of Revenue vs. Release Year
+
+This scatter plot highlights **how Disney's movie revenue has evolved over time**, using nominal box office revenue (Total Gross). A **trend line** is included to show the overall pattern of revenue growth.
+
+![ ](figures/revenue_vs_release_year.png)
+
+---
+
+## Acquisition vs. Revenue
+
+![ ](figures/acquisition_vs_revenue.png)
+
+---
+
+
+## **Conclusion**
+
+- **Disney’s acquisitions (Pixar, Marvel, Lucasfilm) significantly boosted revenue**, with each studio contributing billions in box office earnings.
+
+- **Superhero and animated films dominate Disney’s financial success**, proving to be the most consistently profitable genres.
+
+- **The post 2010 box office landscape is increasingly
+concentrated**, with Disney’s highest grossing films generating a larger share of total revenue.
+
+- **Each acquisition was a strong investment**, as the total revenue from Pixar, Marvel, and Lucasfilm films post acquisition has continued to grow. While the available data up to 2016 showed these studios approaching their acquisition cost, the release of additional films since then has pushed their total box office earnings beyond the initial investment.
+
+
+
