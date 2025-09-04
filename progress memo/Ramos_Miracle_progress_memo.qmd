@@ -1,0 +1,71 @@
+---
+title: "Progress Memo"
+subtitle: |
+  | Final Project 
+  | Data Visualization (STAT 302)
+author: "Miracle Ramos"
+date: today
+
+format:
+  html:
+    toc: true
+    embed-resources: true
+---
+
+## Data source
+The dataset used for this analysis is `disney_boxoffice_history.csv`, sourced from [Kaggle](https://www.kaggle.com/datasets/suvroo/disney-movies-dataset). It contains historical box office data for Disney films, including total gross revenue and inflation-adjusted revenue. The dataset was originally titled *Disney Movies Dataset* on Kaggle and was downloaded from the following source:
+
+**Citation:**  
+Suvroo. (n.d.). *Disney Movies Dataset*. Kaggle. Retrieved from [Kaggle](https://www.kaggle.com/datasets/suvroo/disney-movies-dataset)
+
+## Basic data description
+
+```{r} 
+#| label: tbl-load-summary
+#| tbl-cap: "Summary of Disney Box Office Dataset" 
+#| echo: FALSE
+
+
+# load packages
+library(knitr)
+load("data/data_summary.RData")
+
+# display the table using kable
+kable(summary_table, col.names = c("Metric", "Value"))
+```
+
+From @tbl-load-summary, we can see that the dataset contains **579 observations** and **6 variables**, with a mix of **2 numeric variables** and **4 categorical variables**. There are **no missing values** so we will have complete data for our analysis. The numeric variables, including revenue figures, allow for financial comparisons, while categorical variables, such as `genre` and `MPAA rating`, help analyze trends across different film categories.
+
+## Why this data
+I chose this dataset because it shows Disney's full box office history, making it great for exploring how its big acquisitions impacted success. I also love Disney, so this topic is really interesting to me. I’m especially interested in seeing how buying **Pixar (2006), Marvel (2009), and Lucasfilm (2012)** changed Disney’s box office performance over time. This dataset also lets me dig into whether certain genres consistently make more money than others, which is something I’ve always been curious about.
+
+**By analyzing this data, I can explore key questions like**:
+
+- Did Disney’s acquisitions actually lead to higher box office success?
+- Are some genres naturally more profitable, or does Disney’s marketing and branding play a bigger role?
+
+The dataset is structured with a mix of categorical variables like `genre` and `MPAA rating` and numerical ones like `gross revenue`, which makes it great for different types of analysis. Whether it’s looking at revenue trends over time or comparing how different movie types perform, this data gives me a solid foundation to tell a meaningful story about Disney’s impact on the film industry.
+
+
+## Visualization plan
+
+I will create **a presentation with static graphics** to explore how Disney’s major acquisitions like Pixar, Marvel, Lucasfilm impacted revenue and whether certain genres perform better financially.
+
+**Planned Visualizations:**
+
+  1. **Time-Series Line Chart**: Shows Disney’s annual inflation-adjusted revenue, highlighting acquisition years like 2006, 2009, and 2012 with annotations and color coded trends.
+  
+  2. **Boxplot of Revenue by Genre**: Compares revenue distributions across genres, highlighting which are most profitable.
+  
+  3. **Bar Chart of Top-Grossing Films by Acquisition**: Identifies which acquired studio (Pixar, Marvel, or Lucasfilm) has contributed the most to Disney’s box office success.
+  
+  4. **Scatter Plot of Revenue vs. Release Year**: Analyzes how revenue trends have evolved over time, potentially showing growth patterns.
+  
+  5. **Density Plot of Revenue Distribution**: Shows how revenue is distributed across all Disney films, helping identify outliers and general trends.
+
+Each visualization will include **annotations, clear labels, and color coded** elements to enhance readability. The final product will be a **presentation** summarizing key insights from the analysis.
+
+### Misc
+
+I am working on this project individually so I will manage the data cleaning, visualization, and analysis. A key challenge will be comparing box office trends over time while adjusting for inflation and changes in release strategies like streaming vs. theaters.
+

@@ -1,0 +1,33 @@
+---
+title: "Disney Box Office Visualizations"
+author: "Miracle Ramos"
+date: today
+format: html
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+## Disney Box Office Visualizations
+
+#### 1. The Impact of Disney's Acquisitions on Box Office Revenue
+
+This chart shows how Disney’s box office revenue changed after acquiring Pixar, Marvel, and Lucasfilm. I wanted to highlight whether these acquisitions led to noticeable revenue increases. By plotting total revenue over time and marking acquisition years it became clear that Disney’s earnings spiked after nearly each acquisition This proves that these acquisitions paid off financially.
+
+#### 2. Total Box Office Revenue by Genre
+
+This bar chart answers the question: Which genres generate the most revenue for Disney? I expected superhero and animated films to dominate and the results confirmed this. Adventure, action, and comedy movies make up the largest share of revenue, which makes sense given Disney’s focus on the Marvel Cinematic Universe and Pixar films.
+
+#### 3. Top-Grossing Movies by Genre
+
+This table provides specific examples of Disney’s biggest financial successes per genre. I wanted to see whether classic Disney animated films still hold top spots but it turns out that live action and superhero movies now dominate most genres. Films like *The Avengers* and *Star Wars: The Force Awakens* highlight how Disney’s acquisitions helped them control multiple high grossing categories.
+
+#### 4. Scatter Plot of Revenue vs. Release Year
+
+This scatter plot tracks how Disney’s movie revenue has evolved over time using nominal box office revenue. The trend line provides insight into revenue growth and shows that Disney’s biggest hits have become more concentrated post 2010 which is likely due to its reliance on franchise blockbusters.
+
+#### 5. Disney Acquisitions: Cost vs. Total Box Office Revenue
+
+This bar chart compares Disney’s acquisition costs (Pixar, Marvel, Lucasfilm) with their total box office revenue post acquisition. The number of movies produced by each studio under Disney up until 2016 is also displayed. The results make it clear that each acquisition was a financial success. While the total box office revenue hadn't yet exceeded the acquisition cost in the available data which is up to 2016, the steady upward trend suggests that each studio was on track to surpass it.
