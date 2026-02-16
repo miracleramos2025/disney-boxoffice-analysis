@@ -70,6 +70,14 @@ section[data-state="intro"] {
     padding: 15px; 
 }
 
+.reveal .controls {
+  color: white;
+}
+
+.reveal .progress {
+  color: white;
+}
+
 /* heading sizes & colors */
 section[data-state="intro"] h2 {
     font-size: 36px;  
