@@ -7,7 +7,7 @@ This project explores **Disney’s box office performance**, with a focus on:
 - Profitability across different genres  
 
 The final report is available here:  
-[View Final Report (HTML)](https://miracleramos2025.github.io/disney-boxoffice-analysis/ramos_miracle_final_project.html)
+[View Final Report (HTML)](https://miracleramos2025.github.io/disney-boxoffice-analysis/ramos_miracle_final_report.html)
 
 ---
 
