@@ -159,9 +159,9 @@ avg_studio_plot <- ggplot(
     expand = expansion(mult = c(0, 0.18))
   ) +
   labs(
-    title = "Average Box Office Revenue per Film by Studio",
+    title = "Average Film Revenue by Studio (Inflation-Adjusted)",
     x = NULL,
-    y = "Average Inflation-Adjusted Gross (Millions USD)",
+    y = "Inflation-Adjusted Gross (Millions USD)",
     caption = "Source dataset covers Disney films through 2016"
   ) +
   theme_minimal() +
@@ -244,7 +244,7 @@ disney_trend_plot <- ggplot(
     limits = c(0, 280)
   ) +
   labs(
-    title = "Disney's Average Film Revenue: 1995–2016",
+    title = "Disney's Average Film Revenue: 1995 – 2016",
     x = NULL,
     y = "Avg. Inflation-Adjusted Gross (Millions USD)"
   ) +
